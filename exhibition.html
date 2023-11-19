@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Science Exhibition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="SCI.JS" href="SCI.JS">
+</head>
+<body>
+
+<h1>WELCOME TO SCIENCE EXHIBITION!</h1>
+
+<div class="location-buttons">
+    <button class="button" onclick="location.href='index.class-3'">CLASS 3</button>
+    <button class="button" onclick="location.href='index.class-4'">CLASS 4</button>
+    <button class="button" onclick="location.href='index.class-5'">CLASS 5</button>
+    <button class="button" onclick="location.href='index.class-6'">CLASS 6</button>
+    <button class="button" onclick="location.href='index.class-7'">CLASS 7</button>
+    <button class="button" onclick="location.href='index.class-8'">CLASS 8</button>
+    <button class="button" onclick="location.href='index.class-9'">CLASS 9</button>
+    <button class="button" onclick="location.href='index.class-10'">CLASS 10</button>
+    
+
+    <!-- Add buttons for other locations up to 10 -->
+</div>
+
+<div class="comment-section">
+    <div class="class-comments" id="class-3">
+        <h2>Class 3 Comments</h2>
+        <textarea id="comment-3" placeholder="Leave your comment here"></textarea>
+        <button onclick="submitComment(3)">Submit</button>
+    </div>
+    <!-- Repeat the above structure for classes 4 to 10 -->
+</div>
+
+<script src="SCI.JS"></script>
+</body>
+</html>

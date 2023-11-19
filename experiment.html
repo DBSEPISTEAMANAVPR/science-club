@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Webpage with Like Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-xwaoDmD5FO6QCGCD5uIY41GFOwZnX+5QgY46PbgpLxtYooPFCXQi4Ipmfz9Wktj" crossorigin="anonymous">
+    <style>
+        /* Your existing CSS styles here */
+
+        .image-container {
+            position: relative;
+            width: 300px;
+            margin: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .like-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        .liked {
+            color: #ff0000; /* Change to your preferred liked color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Static Webpage</h1>
+</header>
+
+<main>
+    <div class="image-container">
+        <img src="i" alt="Image 1">
+        <p class="like-button" onclick="toggleLike(this)"><i class="far fa-heart"></i></p>
+    </div>
+    
+    <div class="image-container">
+        <img src="image2.jpg" alt="Image 2">
+        <p class="like-button" onclick="toggleLike(this)"><i class="far fa-heart"></i></p>
+    </div>
+
+    <div class="image-container">
+        <img src="image3.jpg" alt="Image 3">
+        <p class="like-button" onclick="toggleLike(this)"><i class="far fa-heart"></i></p>
+    </div>
+    
+    <!-- Add more image containers as needed -->
+
+</main>
+
+<script>
+    function toggleLike(likeButton) {
+        likeButton.classList.toggle('liked');
+    }
+</script>
+
+</body>
+</html>
